@@ -69,6 +69,7 @@ def playKey(message):
             volume = volume * decay
             receivedKey=radio.receive()
             if receivedKey:
+                print(receivedKey)
                 break
         time.sleep_us(200)
         dloop -= 1
@@ -79,13 +80,16 @@ def playKey(message):
     #print(time.ticks_diff(tEnd, tStart))
 radio.config(group=player)
 display.scroll('P={}'.format(player), delay=60)
+
 while True:
-    receivedKey = radio.receive()
+    if not receivedKey:
+        receivedKey = radio.receive()
     if button_a.was_pressed():
         player += 1 if player < 9 else -9
         radio.config(group=player)    
         display.scroll('P={}'.format(player), delay=60)
     if receivedKey:
+        print(receivedKey)
         playKey(receivedKey)    
     #sleep(5000)    
         
