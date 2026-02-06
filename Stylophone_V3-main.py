@@ -21,14 +21,14 @@ display.scroll("Stylophone", delay=80)
 
 # List of note semitone offsets and names from international A (440Hz)
 notes = [
-    {'offset': -8, 'name': 'C'},
-    {'offset': -6, 'name': 'D'},
+    {'offset': -9, 'name': 'C'},
+    {'offset': -7, 'name': 'D'},
     {'offset': -5, 'name': 'E'},
     {'offset': -4, 'name': 'F'},
     {'offset': -2, 'name': 'G'},
     {'offset':  0, 'name': 'A'},
     {'offset':  2, 'name': 'B'},
-    {'offset':  4, 'name': 'C'},
+    {'offset':  3, 'name': 'C'},
     ]
 
 Stylophone_FX = audio.SoundEffect(
