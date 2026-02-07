@@ -14,7 +14,7 @@ from microbit import *
 import time
 import music
 import radio
-notes = {'C': -8, 'D': -6, 'E': -5, 'F': -4, 'G': -2, 'A': 0, 'B': 2}
+notes = {'C': -9, 'D': -7, 'E': -5, 'F': -4, 'G': -2, 'A': 0, 'B': 2}
 notetype = {'S': 4, 'm': 2, 'c': 1, 'q': 0.5, 's': 0.25, 'd': 0.125  }
 note = 50
 display.scroll("Piano Player", delay=60)
